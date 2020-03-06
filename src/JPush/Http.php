@@ -41,7 +41,7 @@ final class Http {
         // 如果报证书相关失败,可以考虑取消注释掉该行,强制指定证书版本
         //curl_setopt($ch, CURLOPT_SSL_CIPHER_LIST, 'TLSv1');
         // 设置Basic认证
-        curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
+        //curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
         curl_setopt($ch, CURLOPT_USERPWD, $client->getAuthStr());
         curl_setopt($ch, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_2_0);
 
