@@ -43,7 +43,7 @@ final class Http {
         // 设置Basic认证
         //curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
         curl_setopt($ch, CURLOPT_USERPWD, $client->getAuthStr());
-        curl_setopt($ch, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_2_0);
+        curl_setopt($ch, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_1_1);
 
         // 设置Post参数
         if ($method === Config::HTTP_POST) {
